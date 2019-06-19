@@ -15,6 +15,7 @@ public class Payroll
    private double Salary;
    private double bonus;
    private String emp;
+  
  
      /**constructor that takes the salary and employee name
       * 
@@ -27,6 +28,15 @@ public class Payroll
         }
          /**The method for calculating salary including bonus.Bonus is 10% of salary 
       */ 
+    public void totSalary(){
+        if(Salary<=3000){
+            Salary=(Salary*0.10)+Salary;
+            System.out.println("New salary including bonus: "+Salary);
+        }
+        else{
+            System.out.println("New salary including bonus:" +Salary);
+        }
+    }
         
         
      /**The getter for the Salary

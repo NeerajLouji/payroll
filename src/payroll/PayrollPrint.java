@@ -17,14 +17,17 @@ public static void main(String[] args)
 {
 /* here assumed that 50 employee accounts can be created
  for the given bank */
-Payroll ac[]=new Payroll[50];
+/*Payroll ac[]=new Payroll[50];
 Scanner sc=new Scanner(System.in);
 System.out.println("Please enter the employee name:");
-//add code
+
 System.out.println("Please enter the salary: salary <=3000");
        
-System.out.println("The final Salary including bonus is: ");         
-
+System.out.println("The final Salary including bonus is: ");   */      
+    
+    Payroll p1=new Payroll(2000,"Neeraj");
+    
+    p1.totSalary();
 }
 
 }
